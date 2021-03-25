@@ -207,16 +207,12 @@ PRODUCT_PACKAGES += \
 
 # DRM
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-    android.hardware.drm@1.4.vendor \
-    android.hardware.drm-service.clearkey
-=======
     android.hardware.drm-service.clearkey \
+    android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor:64 \
     android.hardware.drm@1.3.vendor:64 \
     android.hardware.drm@1.2.vendor:64 \
     android.hardware.drm@1.1.vendor:64
->>>>>>> 3df250ad (mido: Explicitly build applicable bitness for various packages)
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
@@ -242,8 +238,6 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
-<<<<<<< HEAD
-=======
 # GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0.vendor:64 \
@@ -253,7 +247,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor:64 \
     android.hardware.gnss@3.0.vendor:64
 
->>>>>>> 3df250ad (mido: Explicitly build applicable bitness for various packages)
 # Gatekeeper HAL
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
@@ -261,16 +254,9 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    libcurl
-=======
     android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
     android.hardware.gnss.visibility_control@1.0.vendor:64 \
     libcurl:64
->>>>>>> 3df250ad (mido: Explicitly build applicable bitness for various packages)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
@@ -404,23 +390,13 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-<<<<<<< HEAD
-    android.hardware.radio@1.5.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.2.vendor \
-    librmnetctl \
-=======
     android.hardware.secure_element@1.0 \
     librmnetctl:64 \
->>>>>>> 3df250ad (mido: Explicitly build applicable bitness for various packages)
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
-<<<<<<< HEAD
-=======
 PRODUCT_PACKAGES += \
     android.system.net.netd@1.1.vendor:64 \
     android.hardware.radio@1.5.vendor:64 \
@@ -431,7 +407,6 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.1.vendor:64 \
     android.hardware.secure_element@1.0.vendor:64
 
->>>>>>> 3df250ad (mido: Explicitly build applicable bitness for various packages)
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
@@ -476,14 +451,9 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-<<<<<<< HEAD
-    android.system.net.netd@1.1.vendor \
-    libcld80211 \
-    libwpa_client \
-=======
+    android.system.net.netd@1.1.vendor:64 \
     libcld80211:64 \
     libwpa_client:64 \
->>>>>>> 3df250ad (mido: Explicitly build applicable bitness for various packages)
     hostapd \
     libwifi-hal-qcom:64 \
     TetheringConfigOverlay \
