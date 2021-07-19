@@ -42,6 +42,9 @@ vendor.display.enable_default_color_mode=1
 ro.fm.transmitter=false
 vendor.hw.fm.init=0
 
+# LMK
+ro.lmk.filecache_min_kb=153600
+
 # Media
 av.debug.disable.pers.cache=1
 media.aac_51_output_enabled=true
