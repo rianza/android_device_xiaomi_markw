@@ -354,12 +354,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.mwqemadapter</name>
+        <name>vendor.qti.hardware.fm</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IMwqemAdapter</name>
-            <instance>MwqemAdapter</instance>
+            <name>IFmHci</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
