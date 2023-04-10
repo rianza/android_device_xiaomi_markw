@@ -387,6 +387,10 @@ PRODUCT_PACKAGES += \
     init.parts.rc \
     init.target.rc \
     ueventd.qcom.rc
+    
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
 
 # RIL
 PRODUCT_PACKAGES += \
