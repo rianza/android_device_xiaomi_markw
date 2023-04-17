@@ -431,7 +431,7 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi@1.0-service \
     android.system.net.netd@1.1.vendor \
     libcld80211 \
     libwpa_client \
