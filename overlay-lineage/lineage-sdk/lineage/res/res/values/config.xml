@@ -172,4 +172,12 @@
 
     <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
     <bool name="config_swipe_up_gesture_setting_available">true</bool>
+        <!-- Defines the actions shown in advanced reboot submenu -->
+    <string-array name="config_restartActionsList">
+        <item>restart</item>
+        <item>restart_recovery</item>
+        <item>restart_bootloader</item>
+        <item>restart_fastboot</item>
+      	<item>restart_systemui</item>
+    </string-array>
 </resources>
