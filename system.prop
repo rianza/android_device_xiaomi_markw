@@ -68,6 +68,9 @@ ro.vendor.qti.sys.fw.bservice_enable=true
 # Qualcomm
 ro.vendor.qti.va_aosp.support=1
 
+# HW
+qemu.hw.mainkeys=0
+
 # Radio (IMS)
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
