@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_markw.mk
+    $(LOCAL_DIR)/bootleg_markw.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_markw-user \
-    cherish_markw-userdebug \
-    cherish_markw-eng
+    bootleg_markw-user \
+    bootleg_markw-userdebug \
+    bootleg_markw-eng
