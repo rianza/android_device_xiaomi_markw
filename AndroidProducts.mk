@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_markw.mk
+    $(LOCAL_DIR)/evolution_markw.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_markw-user \
-    cherish_markw-userdebug \
-    cherish_markw-eng
+    evolution_markw-user \
+    evolution_markw-userdebug \
+    evolution_markw-eng
