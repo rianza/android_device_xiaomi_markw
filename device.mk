@@ -200,6 +200,10 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor
 
+# Dex/ART optimization
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+USE_DEX2OAT_DEBUG := false
+
 # Device-specific settings
 PRODUCT_PACKAGES += \
     XiaomiParts
