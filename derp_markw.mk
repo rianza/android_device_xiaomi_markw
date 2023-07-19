@@ -33,7 +33,7 @@ TARGET_SUPPORTS_QUICK_TAP := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := markw
-PRODUCT_NAME := lineage_markw
+PRODUCT_NAME := derp_markw
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4 Prime
 PRODUCT_MANUFACTURER := Xiaomi
