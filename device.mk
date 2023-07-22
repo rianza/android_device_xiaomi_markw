@@ -24,7 +24,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-derp
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-yaap
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal

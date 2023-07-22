@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_markw.mk
+    $(LOCAL_DIR)/yaap_markw.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_markw-user \
-    derp_markw-userdebug \
-    derp_markw-eng
+    yaap_markw-user \
+    yaap_markw-userdebug \
+    yaap_markw-eng
