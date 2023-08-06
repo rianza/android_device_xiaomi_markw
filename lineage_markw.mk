@@ -24,9 +24,18 @@ $(call inherit-product, device/xiaomi/markw/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-TARGET_SUPPORTS_QUICK_TAP := true
+# Inherit some risingOSS stuff.
+RISING_MAINTAINER := moro
 TARGET_ENABLE_BLUR := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+TARGET_HAS_UDFPS := false
+TARGET_BUILD_APERTURE_CAMERA := true
+
+# Some GMS flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := markw
