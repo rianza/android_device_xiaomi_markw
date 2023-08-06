@@ -28,10 +28,6 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Debugging Flags
-TARGET_INCLUDE_MATLOG := false
-TARGET_DEFAULT_ADB_ENABLED := false
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := markw
 PRODUCT_NAME := lineage_markw
