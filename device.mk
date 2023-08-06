@@ -23,7 +23,7 @@ TARGET_BOARD_SUFFIX := _64
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pixel
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -432,10 +432,6 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl:64 \
     android.hardware.thermal@1.0-service \
     thermal.msm8953:64
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
 
 # USB HAL
 PRODUCT_PACKAGES += \

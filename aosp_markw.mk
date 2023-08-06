@@ -21,25 +21,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from markw device
 $(call inherit-product, device/xiaomi/markw/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Aosp stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit some risingOSS stuff.
-RISING_MAINTAINER := moro
+# Inherit some aosp stuff.
+PiXEL_MAINTAINER := moro
 TARGET_ENABLE_BLUR := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USE_PIXEL_FINGERPRINT := true
-TARGET_HAS_UDFPS := false
-TARGET_BUILD_APERTURE_CAMERA := true
-
-# Some GMS flags
-WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_USE_GOOGLE_TELEPHONY := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := markw
-PRODUCT_NAME := lineage_markw
+PRODUCT_NAME := aosp_markw
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4 Prime
 PRODUCT_MANUFACTURER := Xiaomi
