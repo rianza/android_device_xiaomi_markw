@@ -151,21 +151,26 @@ TARGET_BOOTANIMATION_HALF_RES := true
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.frameworks.displayservice@1.0:32 \
-    android.frameworks.cameraservice.common@2.0 \
-    android.frameworks.cameraservice.device@2.0 \
-    android.frameworks.cameraservice.service@2.0 \
-    vendor.qti.hardware.camera.device@1.0 \
-    android.hardware.camera.device@3.4 \
-    android.hardware.camera.provider@2.5 \
+    android.frameworks.displayservice@1.0.vendor \
+    android.hidl.base@1.0.vendor \
+    android.hardware.camera.device@3.5 \
+    android.hardware.camera.provider@2.4 \
+    android.hardware.camera.provider@2.4-external \
     android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-legacy \
     android.hardware.camera.provider@2.4-service \
-    camera.device@3.2-impl \
-    vendor.qti.hardware.camera.device@1.0.vendor \
+    android.hardware.camera.provider@2.6 \
+    camera.device@1.0-impl \
+    camera.device@3.5-impl \
+    camera.device@3.6-external-impl \
     camera.msm8953 \
+    libcamshim \
+    libui_shim \
     libdng_sdk.vendor \
     libgui_vendor \
-    libstdc++.vendor
+    libstdc++.vendor \
+    vendor.qti.hardware.camera.device@1.0 \
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -376,6 +381,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
     $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    libprotobuf-cpp-full-vendorcompat \
+    libprotobuf-cpp-lite-vendorcompat
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -405,11 +416,11 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.5.vendor:64 \
-    android.hardware.radio.config@1.2.vendor:64 \
-    android.hardware.radio.deprecated@1.0.vendor:64 \
-    android.hardware.secure_element@1.2.vendor:64 \
-    librmnetctl:64 \
+    android.hardware.radio@1.5.vendor \
+    android.hardware.radio.config@1.2.vendor \
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor \
+    librmnetctl \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
