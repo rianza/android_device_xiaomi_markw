@@ -16,7 +16,7 @@
 
 $(call inherit-product, vendor/xiaomi/markw/markw-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
-$(call inherit-product, vendor/xiaomi/mido/google/google.mk)
+$(call inherit-product, vendor/xiaomi/markw/google/google.mk)
 
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_SUFFIX := _64
@@ -215,7 +215,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
         $(LOCAL_PATH)/configs/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml
-$(call inherit-product, vendor/xiaomi/mido/google/google.mk)
+$(call inherit-product, vendor/xiaomi/markw/google/google.mk)
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.xiaomi_markw \
