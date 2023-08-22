@@ -67,6 +67,7 @@ BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 
 # Art
 WITH_DEXPREOPT_DEBUG_INFO := false
+USE_DEX2OAT_DEBUG := false
 
 # Audio
 USE_DEVICE_SPECIFIC_AUDIO := true
