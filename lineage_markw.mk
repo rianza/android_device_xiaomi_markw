@@ -24,6 +24,11 @@ $(call inherit-product, device/xiaomi/markw/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Havoc-OS additions
+HAVOC_BUILD_TYPE := Unofficial
+HAVOC_BUILD_VARIANT := Vanilla
+HAVOC_MAINTAINER := m@who
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := markw
 PRODUCT_NAME := lineage_markw
