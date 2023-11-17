@@ -139,8 +139,5 @@ net.tcp.2g_init_rwnd=10
 # Usb
 persist.vendor.usb.config.extra=none
 
-# Wifi
-wifi.interface=wlan0
-
 # Wifi-Display
 persist.sys.wfd.virtual=0
