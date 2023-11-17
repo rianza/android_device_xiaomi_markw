@@ -203,7 +203,7 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    Doze \
+    DeviceDoze \
     XiaomiParts
     
 # Dex/ART optimization
