@@ -24,6 +24,19 @@ $(call inherit-product, device/xiaomi/markw/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := false 
+TARGET_HAS_UDFPS := false 
+TARGET_ENABLE_BLUR := false 
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+# AlphaDroid
+ALPHA_BUILD_TYPE := UNOFFICIAL
+ALPHA_MAINTAINER := m@who
+# WITH_GAPPS := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := markw
 PRODUCT_NAME := lineage_markw
